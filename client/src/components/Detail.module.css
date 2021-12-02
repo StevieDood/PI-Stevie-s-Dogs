@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Mochy";
+  src: url("../assets/fonts/Mochy.ttf");
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: #ffbf69;
+  background-size: cover;
+}
+
+.container > div > h1 {
+  font-family: "Mochy";
+  color: #2ec4b6;
+  text-shadow: 4px 2px #708098;
+}
+
+.container > div > h3 {
+  font-family: "Mochy";
+  color: #5b5b5b;
+  text-shadow: 1px 1px #708098;
+}
+
+.detailPic {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  width: 40rem;
+  height: 30rem;
+  border-radius: 1rem;
+  border: solid 4px #2ec4b6;
+  box-shadow: 0px 0px 4px 4px #708098;
+}
+
+.bottomDog {
+  position: fixed;
+  bottom: 0;
+  right: -10rem;
+  height: 35rem;
+  width: 45rem;
+}
+
+.sideDog {
+  position: fixed;
+  top: -1rem;
+  left: -20.5rem;
+}
+
+.btn {
+  font-family: "Mochy";
+  color: #505050;
+  border-radius: 1rem;
+  background-color: #2ec4b6;
+  height: 2.5rem;
+  margin: 1rem;
+  font-size: 1rem;
+  transition: filter 0.5s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  filter: brightness(80%);
+}

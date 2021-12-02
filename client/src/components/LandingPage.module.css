@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Mochy";
+  src: url("../assets/fonts/Mochy.ttf");
+}
+
+.video {
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.title {
+  font-family: "Mochy";
+  top: 8%;
+  left: 8%;
+  position: absolute;
+  color: #ffbf69;
+  text-shadow: 1px 3px 0 #575757, 1px 10px 5px #2ec4b6;
+
+  font-size: 5rem;
+}
+.btn {
+  background-color: #ffffff30;
+  border-radius: 1rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  height: 10rem;
+  width: 15rem;
+  font-family: "Mochy";
+  font-size: 3rem;
+  color: #ffbf69;
+  text-shadow: 1px 3px 0 #575757, 1px 10px 5px #2ec4b6;
+  transition: background-color 0.5s, font-size 0.5s;
+}
+
+.btn:hover {
+  font-size: 4rem;
+  text-shadow: 1px 1px 2px black;
+  background-color: #ffffff80;
+}

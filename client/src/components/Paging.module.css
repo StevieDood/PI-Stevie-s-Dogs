@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Mochy";
+  src: url("../assets/fonts/Mochy.ttf");
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.list {
+  display: inline-flex;
+}
+.list > button {
+  cursor: pointer;
+  border: 1px solid #00000030;
+  padding: 0.5rem;
+  margin-right: 0.2rem;
+  margin-left: 0.2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  width: 2.5rem;
+  background-color: white;
+  border: solid 1px #ffbf69;
+  border-radius: 10%;
+  transition: background 1s, color 1s;
+  font-family: "Mochy";
+  font-size: 1rem;
+}
+
+.list > button:hover {
+  background: #ff9f1c;
+  color: white;
+}
+.list > button:focus {
+  background: #2ec4b6;
+  border: solid 1px #2ec4b6;
+  color: #505050;
+}

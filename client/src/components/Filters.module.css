@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Mochy";
+  src: url("../assets/fonts/Mochy.ttf");
+}
+.container {
+  width: 100%;
+  height: 10rem;
+}
+
+.container > h1 {
+  font-family: "Mochy";
+  margin: 5rem;
+  color: #2ec4b6;
+}
+
+.label {
+  color: #555657;
+  font-family: "Mochy";
+  font-size: 1rem;
+  background-color: #ffbf69;
+  border-radius: 1rem;
+  margin: 2rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.select {
+  color: ;
+  font-family: "Mochy";
+  border-radius: 1rem;
+  border: solid 4px #cbf3f0;
+  height: 2rem;
+}

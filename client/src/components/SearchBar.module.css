@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Mochy";
+  src: url("../assets/fonts/Mochy.ttf");
+}
+
+.searchbar {
+  flex-basis: 100%;
+}
+
+.searchbar > input {
+  border-radius: 1rem;
+  height: 1.8rem;
+  width: 15rem;
+  font-family: "Mochy";
+}
+
+.searchbar > button {
+  border-radius: 1rem;
+  height: 2.2rem;
+  width: 6rem;
+  background-color: #cbf3f0;
+  font-family: "Mochy";
+  transition: filter 0.5s;
+}
+
+.searchbar > button:hover {
+  cursor: pointer;
+  filter: brightness(80%);
+}
+
+.dogTitle {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  right: 0;
+  height: 20rem;
+  width: 25rem;
+}

@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.container > a:link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.container > a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+.container > a:hover {
+  color: #2419a3;
+  text-decoration: none;
+}
+
+.fixed {
+  position: fixed;
+  top: 25rem;
+  left: -5rem;
+  height: 30rem;
+  width: 20rem;
+}

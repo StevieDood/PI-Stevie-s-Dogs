@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "Mochy";
+  src: url("../assets/fonts/Mochy.ttf");
+}
+
+.title {
+  display: flex;
+  flex-flow: row wrap;
+  height: 20rem;
+  width: 100%;
+  background-color: #ff9f1c;
+}
+
+.title > h1 {
+  font-family: "Mochy";
+  font-size: 3em;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  flex-basis: 100%;
+}
+
+.addDogLink {
+  border-radius: 1rem;
+  height: 1.8rem;
+  width: 15rem;
+  background-color: #cbf3f0;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  font-family: "Mochy";
+  text-align: center;
+  border: solid 1.8px #000000;
+  transition: filter 0.5s;
+}
+
+.addDogLink:hover {
+  filter: brightness(80%);
+}
+
+.bone1 {
+  position: absolute;
+  top: 3.5rem;
+  left: 40rem;
+  height: 2rem;
+  width: 4rem;
+  margin: 0;
+  transform: rotate(45deg);
+}
+
+.bone2 {
+  position: absolute;
+  top: 3.5rem;
+  right: 40rem;
+  height: 2rem;
+  width: 4rem;
+  margin: 0;
+  transform: rotate(135deg);
+}
+
+.reset {
+  font-family: "Mochy";
+  border-radius: 1rem;
+  background-color: #cbf3f0;
+  margin: 2rem;
+  transition: filter 0.5s;
+}
+
+.reset:hover {
+  cursor: pointer;
+  filter: brightness(80%);
+}
