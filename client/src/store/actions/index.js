@@ -15,7 +15,7 @@ export const FILTER_BY_TEMP = "FILTER_BY_TEMP";
 //funcion para traer todos los perros
 export function fetchDogs() {
   return async function (dispatch) {
-    let fetchedDogs = await axios.get("http://localhost:3001/api/dogs", {});
+    let fetchedDogs = await axios.get("/api/dogs", {});
     return dispatch({
       type: FETCH_DOGS,
       payload: fetchedDogs.data,
@@ -26,10 +26,7 @@ export function fetchDogs() {
 //funcion para buscar por nombre
 export function searchByName(name) {
   return async function (dispatch) {
-    let search = await axios.get(
-      "http://localhost:3001/api/dogs/name/" + name,
-      {}
-    );
+    let search = await axios.get("/api/dogs/name/" + name, {});
     return dispatch({
       type: SEARCH_NAME,
       payload: search.data,
@@ -72,7 +69,7 @@ export function filterByTemp(payload) {
 //funcion para traer todos los temperamentos
 export function getTemps() {
   return async function (dispatch) {
-    let temps = await axios.get("http://localhost:3001/api/temperaments", {});
+    let temps = await axios.get("/api/temperaments", {});
     return dispatch({
       type: GET_TEMPS,
       payload: temps.data,
@@ -83,7 +80,7 @@ export function getTemps() {
 //funcion para postear perro nuevo a la db
 export function postDog(payload) {
   return async function (dispatch) {
-    let post = await axios.post("http://localhost:3001/api/dogs", payload);
+    let post = await axios.post("/api/dogs", payload);
     return post;
   };
 }
@@ -92,7 +89,7 @@ export function postDog(payload) {
 export function getDetail(id) {
   return async function (dispatch) {
     try {
-      let detail = await axios.get("http://localhost:3001/api/dogs/" + id);
+      let detail = await axios.get("/api/dogs/" + id);
       return dispatch({
         type: GET_DETAIL,
         payload: detail.data,
